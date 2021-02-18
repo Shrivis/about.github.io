@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: rgb(206, 206, 206);
+}
+a:hover {
+    color: teal;
+}
+nav {
+    display: flex;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: Aladin;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 40px;
+    z-index: 1000;
+    background-color: #242424;
+}
+.cool-background {
+    width: 100%;
+    background: #131313;
+    background: -webkit-linear-gradient(to left, #1b1b1b, #b3b3b3);
+    background: linear-gradient(to left, #1b1b1b, #b3b3b3);
+    color: #fff;
+}
+.name {
+    font-family: "Amita" !important;
+    opacity: 0.9;
+    display: inline-flex;
+    font-size: 36px;
+    color: #0c0c0c;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 4px rgb(66, 66, 66);
+}
+.big {
+    font-size: 45px;
+    color: white !important;
+    text-shadow: 4px 4px 4px rgb(0, 0, 0);
+}
+.name:hover {
+    color: white !important;
+}
+.big:hover {
+    color: #0c0c0c;
+}
+.menu {
+    display: flex;
+}
+.active {
+    background-color: rgb(124, 124, 124) !important;
+    color: rgb(216, 216, 216) !important;
+    border-radius: 20px;
+}
+.active:hover {
+    background-color: transparent !important;
+}
+.menu li a {
+    padding: 10px 15px;
+    color: #6c707c;
+    font-size: 12px;
+}
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #757575;
+    font-family: Aladin;
+}
+.menu li a:hover {
+    color: #fff !important;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+}
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 11vh;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 15px;
+}
+.pdf {
+    padding-top: 50px;
+    min-height: 5vh;
+    width: 80vw;
+}
+.image {
+    background: url("1.jpg") center/cover no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 40vh;
+    min-width: 25vh;
+    max-width: 40vh;
+    max-height: auto;
+    border-radius: 100%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Amita" !important;
+}
+.content span {
+    height: 2px;
+    width: 60%;
+    background: #777;
+    margin: 15px 15px;
+}
+.content p {
+    padding-bottom: 15px;
+    font-weight: 300;
+    opacity: 0.7;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: Aladin;
+    padding: 5px 10px;
+    color: rgb(95, 95, 95);
+    background-color: #242424;
+}
+
+.social a {
+    font-size: 2rem;
+    padding: 1rem;
+}
+.icon {
+    font-size: 2rem;
+    padding: 2rem;
+}
+.fa-facebook {
+    color: #3b5998;
+}
+.fa-twitter {
+    color: #00aced;
+}
+.fa-github {
+    color: #333;
+}
+.fa-instagram {
+    color: #3f729b;
+}
+.fa-youtube {
+    color: #bb0000;
+}
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-github:hover,
+.fa-instagram:hover,
+.fa-youtube:hover {
+    color: #d5d5d5;
+}
+.privacy {
+    font-family: Aladin;
+    color: rgb(85, 32, 32);
+    padding: 220px 0;
+    font-size: xx-large;
+    text-align: center;
+}
+.text-center {
+    text-align: center !important;
+}
+.padding {
+    padding: 10vh;
+}
+@media (max-width: 900px) {
+    .about {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}
