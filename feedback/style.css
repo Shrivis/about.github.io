@@ -95,6 +95,9 @@ nav {
         display: flex;
         margin-top: 20%;
     }
+    .logo {
+        font-size: 20px;
+    }
 }
 @media (max-width: 650px) {
     .form {
@@ -108,5 +111,8 @@ nav {
         display: grid;
         margin-top: 20%;
         margin-bottom: 15%;
+    }
+    .logo {
+        font-size: 15px;
     }
 }
