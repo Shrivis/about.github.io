@@ -51,13 +51,15 @@ nav {
 .form {
     min-height: 100%;
     width: 33%;
-    overflow-x: hidden;
+    overflow-x: auto;
+    max-height: 64vh;
     padding: 20px;
 }
 .suggestion_window {
     min-height: 100%;
     width: 67%;
-    overflow: hidden;
+    overflow-x: auto;
+    max-height: 64vh;
     background-color: rgb(105, 105, 105, 0.4) !important;
     padding: 20px;
     border-radius: 0 10px 10px 0;
@@ -114,7 +116,7 @@ nav {
     }
     .suggestion_window {
         width: 100% !important;
-	    border-radius: 0 0 10px 10px;
+	border-radius: 0 0 10px 10px;
     	background: -webkit-linear-gradient(to left, #1b1b1b, #b3b3b3);
     	background: linear-gradient(to left, #1b1b1b, #cecece);
     }
