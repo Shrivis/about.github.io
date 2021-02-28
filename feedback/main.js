@@ -46,7 +46,7 @@ function validate() {
         var str =  `<div name="div_count" class="card my-2">
                         <div class="mx-2">
                                 <p>${suz.value}</p>
-                                <footer class="name">${title}${fname.value} ${mname.value} ${lname.value}</footer>
+                                <footer class="name">- ${title}${fname.value} ${mname.value} ${lname.value}</footer>
                         </div>
                     </div>`;
         var div = document.createElement("div");
