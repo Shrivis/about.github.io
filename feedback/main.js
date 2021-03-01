@@ -44,11 +44,9 @@ function validate() {
         else {
             title = 'Mx. ';
         }
-        var str =   `<div class="card my-2">
-                        <div class="mx-2">
-                                <p>${suz.value}</p>
-                                <footer class="name">- ${title}${fname.value} ${mname.value} ${lname.value}</footer>
-                        </div>
+        var str =   `<div class="btn btn-secondary mt-1">
+                        <p>${suz.value}</p>
+                        <footer class="name">- ${title}${fname.value} ${mname.value} ${lname.value}</footer>
                     </div>`;
         localStorage.setItem(localStorage.length + 1, str);
         print(); // Prints five suggestions
@@ -65,7 +63,7 @@ function print() {
     }
     // Adding show all button if total suggestions are greater than five
     if(localStorage.length > 5) {
-        var str =  `<div class="align-self-end ml-auto"> 
+        var str =  `<div class="align-self-end ml-auto mt-1"> 
                         <button type="button" onclick="printall()" class="btn card btn-secondary"> 
                             Show All
                         </button> 
@@ -86,7 +84,7 @@ function printall() {
         document.getElementById('hidden').appendChild(div);  
     }
     // Button to show only five suggestion
-    var str =  `<div class="align-self-end ml-auto"> 
+    var str =  `<div class="align-self-end ml-auto mt-1"> 
                         <button type="button" onclick="print()" class="btn card btn-secondary"> 
                             Show Less
                         </button> 
