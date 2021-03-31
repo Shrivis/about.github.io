@@ -1,5 +1,8 @@
 body {
     font-family: 'Aladin', Tahoma, Geneva, Verdana, sans-serif;
+    background: #131313;
+    background: -webkit-linear-gradient(to left, #141414, #b3b3b3);
+    background: linear-gradient(to left, #111111, #b3b3b3);
 }
 h1 {
     font-size: 3em;
@@ -109,7 +112,7 @@ h1 {
 .card {
     width: 350px;
     border: none;
-    box-shadow: 5px 6px 6px 2px #e9ecef;
+    box-shadow: 5px 6px 6px 2px black;
     border-radius: 12px
 }
 
