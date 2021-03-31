@@ -1,3 +1,8 @@
+window.addEventListener("keydown", function(e) {
+    if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
+        e.preventDefault();
+    }
+}, false);
 var score = 0,
 gscore = 0,
 countblink = 10,
